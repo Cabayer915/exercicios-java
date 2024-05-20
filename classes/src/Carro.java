@@ -66,6 +66,17 @@ public class Carro {
         this.marca = marca;
     }
 
+    @Override
+    public String toString() {
+        return "Carro\n" +
+                "    Numeração = " + numeracao + ",\n" +
+                "    Modelo = " + modelo + ",\n" +
+                "    Cor = " + cor + ",\n" +
+                "    Capacidade do Tanque = " + capacidadeTanque + ",\n" +
+                "    Placa = " + placa + ",\n" +
+                "    Marca = " + marca + "\n";
+    }
+
     public Integer calculaCapacidadeTanque(Integer valor) {
         return capacidadeTanque * valor;
     }
